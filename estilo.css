@@ -88,6 +88,11 @@ a { color: var(--laranja); }
   border-radius: 14px;
   box-shadow: 0 4px 14px rgba(181,101,29,.35);
 }
+/* O botão fica DENTRO de .card, e a regra ".card a" (mais acima) pinta links
+   de laranja. Ela é mais específica que ".baixar" sozinha, então vencia: o
+   texto ficava laranja sobre fundo laranja e o botão aparecia como um bloco
+   vazio. Esta regra é mais específica ainda e devolve o branco. */
+.card a.baixar { color: #fff; }
 .baixar:hover { filter: brightness(1.08); }
 .baixar small {
   display: block;

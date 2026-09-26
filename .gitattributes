@@ -1,0 +1,4 @@
+# Mantem quebra de linha LF no repositorio, independente de quem edita.
+# Sem isso, um arquivo editado no Windows aparece como "tudo diferente" no
+# diff, e fica impossivel ver o que mudou de verdade numa politica.
+* text=auto eol=lf
